@@ -1,6 +1,3 @@
-rjmp main
-main:
-nop
-inc r16
-inc r17
-rjmp PC-3
+.include <m16def.inc>
+ldi r16, LOW (ramend)
+out SPL,r16
